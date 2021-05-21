@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "chest_xray"
+version = "0.1.0"
+description = ""
+authors = ["seblum <sebast.blum@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pandas = "^1.2.4"
+numpy = "1.19.3"
+tensorflow = "^2.5.0"
+sklearn = "^0.0"
+Pillow = "^8.2.0"
+matplotlib = "^3.4.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+my-script = "chest_xray.main:start"
