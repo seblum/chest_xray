@@ -22,6 +22,8 @@ def start():
     from .cnn_model import Model
     from .preprocessing import move_files
 
+    from lime import lime_image
+
     AUTOTUNE = tf.data.experimental.AUTOTUNE
     img_width, img_height = 180, 180
     BATCH_SIZE = 25
